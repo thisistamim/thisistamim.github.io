@@ -16,6 +16,7 @@ section {
     margin: auto;
 }
 
+body,
 .linkedinCard {
     color: #fff;
     background: #24292f;
@@ -36,7 +37,7 @@ section {
 .linkedinCard .back-gnd-img {
     width: 100%;
     height: 200px;
-    background: url("https://media.licdn.com/dms/image/D5616AQHwx3b4Qr6TQQ/profile-displaybackgroundimage-shrink_200_800/0/1676997345780?e=2147483647&v=beta&t=haSsfP1-zgaLBGrPoiO2m3EwBLIWZDWx4RrmX1XRGes");
+    background: url("./img/back.jpg");
     background-size: cover;
     border-radius: 8px 8px 0 0;
 }
