@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.max-width {
+    max-width: 900px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.linkedinCard {
+    color: #fff;
+    background: #24292f;
+    font-family: 'Poppins', sans-serif;
+}
+
+.linkedinCard .linkedinCard-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkedinCard .linkedinCard-content .column {
+    width: calc(50% - 30px);
+}
+
+.linkedinCard .back-gnd-img {
+    width: 100%;
+    height: 200px;
+    background: url("https://media.licdn.com/dms/image/D5616AQHwx3b4Qr6TQQ/profile-displaybackgroundimage-shrink_200_800/0/1676997345780?e=2147483647&v=beta&t=haSsfP1-zgaLBGrPoiO2m3EwBLIWZDWx4RrmX1XRGes");
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.linkedinCard .profile-img {
+    height: 132px;
+    width: 132px;
+    background-image: url("https://avatars.githubusercontent.com/u/107707836");
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    padding: 5px;
+    margin-top: -70px;
+}
+
+.linkedinCard .aboutMe,
+.linkedinCard .aboutExp,
+.linkedinCard .findMe {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.linkedinCard .aboutMe>h3 {
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.linkedinCard .aboutMe>p {
+    font-size: 15px;
+}
+
+.linkedinCard .aboutExp {
+    margin-top: 50px;
+}
+
+.linkedinCard .aboutExp img {
+    width: 20px;
+    height: 20px;
+}
+
+.linkedinCard .aboutExp a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkedinCard .aboutExp a:hover {
+    text-decoration: underline;
+}
+
+.linkedinCard .findMe ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: small;
+    padding: 0 5px;
+    position: relative;
+}
+
+.linkedinCard .findMe ul li>a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkedinCard .findMe ul li>a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.linkedinCard .findMe ul li>a:hover::after {
+    width: 100%;
+}
+
+/* automation */
+
+.linkedinCard .automation {
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+    background: url("./img/auto.gif");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 8px 8px;
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .max-width {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    .linkedinCard .linkedinCard-content .column {
+        width: 100%;
+        margin-bottom: -16px;
+    }
+
+    .linkedinCard .back-gnd-img {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .linkedinCard .automation {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .linkedinCard .back-gnd-img,
+    .linkedinCard .automation {
+        height: 100px;
+    }
+
+    .linkedinCard .profile-img {
+        width: 90px;
+        height: 90px;
+        margin-top: -50px;
+    }
+
+    .linkedinCard .aboutMe>h3 {
+        font-size: large;
+    }
+
+    .linkedinCard .aboutMe>p {
+        font-size: small;
+    }
+
+    .linkedinCard .aboutExp {
+        font-size: small;
+        margin-top: 30px;
+    }
+
+    .linkedinCard .aboutExp img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .linkedinCard .findMe>h4 {
+        font-size: small;
+    }
+}
