@@ -106,7 +106,7 @@ body,
 .linkedinCard .findMe ul li>a:after {
     content: '';
     width: 0;
-    height: 2px;
+    height: 1px;
     background: #fff;
     position: absolute;
     left: 0;
