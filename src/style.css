@@ -34,12 +34,16 @@ body,
     width: calc(50% - 30px);
 }
 
-.linkedinCard .back-gnd-img {
+.linkedinCard .back-gnd-img,
+.linkedinCard .automation {
     width: 100%;
-    height: 200px;
-    background: url("./img/back.jpg");
+    height: 160px;
+    margin-top: 15px;
+    background-image: url("./img/back.jpg");
     background-size: cover;
-    border-radius: 8px 8px 0 0;
+    background-position: center;
+    border-radius: 6px 6px 0 0;
+    transition: .5s;
 }
 
 .linkedinCard .profile-img {
@@ -118,16 +122,15 @@ body,
     width: 100%;
 }
 
-/* automation */
+/* line:38 */
 
 .linkedinCard .automation {
-    width: 100%;
-    height: 200px;
-    margin-top: 15px;
-    background: url("./img/auto.gif");
-    background-size: cover;
-    background-position: center;
-    border-radius: 0 0 8px 8px;
+    rotate: 180deg;
+}
+
+.linkedinCard .back-gnd-img:hover,
+.linkedinCard .automation:hover {
+    filter: grayscale(75%);
 }
 
 @media (max-width: 991px) {
