@@ -43,6 +43,7 @@ body,
     background-size: cover;
     background-position: center;
     border-radius: 6px 6px 0 0;
+    filter: grayscale(75%);
     transition: .5s;
 }
 
@@ -130,7 +131,7 @@ body,
 
 .linkedinCard .back-gnd-img:hover,
 .linkedinCard .automation:hover {
-    filter: grayscale(75%);
+    filter: grayscale(95%);
 }
 
 @media (max-width: 991px) {
