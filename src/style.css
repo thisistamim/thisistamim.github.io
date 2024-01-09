@@ -50,7 +50,7 @@ body,
 .linkedinCard .profile-img {
     height: 132px;
     width: 132px;
-    background-image: url("https://avatars.githubusercontent.com/u/107707836");
+    background-image: url(./img/avatar.png);
     background-size: cover;
     border-radius: 50%;
     position: relative;
