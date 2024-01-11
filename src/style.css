@@ -23,6 +23,71 @@ body,
     font-family: 'Poppins', sans-serif;
 }
 
+.LinkedInLoader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    cursor: default;
+    transform: translate(-50%, -50%);
+}
+
+.Logo {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+.part1 {
+    font-weight: 600;
+    font-size: 59px;
+    color: #fff;
+}
+
+.part2 {
+    padding: 0 5px;
+    color: #24292f;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: 600;
+    font-size: 59px;
+    margin-left: 5px;
+}
+
+.Loader {
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    height: 1.5px;
+    width: 200px;
+    background: #fff;
+}
+
+.loading {
+    background: #156d96;
+    width: 80px;
+    height: 1.5px;
+    animation: load 1.5s infinite;
+}
+
+@keyframes load {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(120px);
+    }
+}
+
+/* linkedinCard */
+
+.linkedinCard,
+.LinkedInLoader {
+    opacity: 0;
+}
+
 .linkedinCard .linkedinCard-content {
     display: flex;
     flex-wrap: wrap;
@@ -123,8 +188,6 @@ body,
     width: 100%;
 }
 
-/* line:38 */
-
 .linkedinCard .automation {
     rotate: 180deg;
 }
@@ -132,6 +195,17 @@ body,
 .linkedinCard .back-gnd-img:hover,
 .linkedinCard .automation:hover {
     filter: grayscale(95%);
+}
+
+/* when JS disable */
+
+noscript {
+    color: red;
+    font-weight: bold;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 991px) {
