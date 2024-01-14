@@ -15,16 +15,15 @@ else {
 
 // loader
 window.onload = function () {
-    document.querySelector(".LinkedInLoader").style.opacity = "1";
+    setTimeout(() => {
+        document.querySelector(".LinkedInLoader").remove();
+    }, 2345);
 };
-
-setTimeout(() => {
-    document.querySelector(".LinkedInLoader").remove();
-}, 2345);
 
 // profile
 styleElement.innerHTML = `
     .linkedinCard {
+        display: block;
         animation: fullyloaded 2.345s linear both;
     }
 
