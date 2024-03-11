@@ -1,4 +1,4 @@
-> Let's Talk to Your Electrical System with PLCs. The perfect spot to learn all about Industrial Automation. :point_right: <a href="https://talkplcs.web.app/" terget="_blank">@TalkPLCs</a>
+> Let's Talk to Your Electrical System with PLCs. The perfect spot to learn all about Industrial Automation.<br>:point_right: <a href="https://talkplcs.web.app/" terget="_blank">#TalkPLCs</a>
 
 ---
 
