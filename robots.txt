@@ -1,4 +1,1 @@
 User-agent: *
-Disallow: /private/
-Disallow: /restricted-page.html
-Allow: /public/
