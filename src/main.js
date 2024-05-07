@@ -14,10 +14,14 @@ else {
 }
 
 // loader
+document.querySelector(".LinkedInLoader").style.display = 'block';
 window.onload = function () {
     setTimeout(() => {
         document.querySelector(".LinkedInLoader").remove();
     }, 2345);
+    // title element updated
+    var titleElement = document.querySelector('title');
+    titleElement.textContent = 'Tamim Ahmad - Portfolio';
 };
 
 // profile
